@@ -1,12 +1,15 @@
 [project]
 name = "scrapping-mercado"
 version = "0.1.0"
-description = "Add your description here"
+description = "Scraping de produtos em mercados online com Selenium e bots configuraveis por variavel de ambiente"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "dotenv>=0.9.9",
     "loguru>=0.7.3",
     "pydantic>=2.11.7",
+    "python-dotenv>=1.1.1",
     "selenium>=4.43.0",
 ]
+
+[project.scripts]
+scrapping-mercado = "main:main"
