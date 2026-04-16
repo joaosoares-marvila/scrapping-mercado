@@ -1,6 +1,6 @@
 import re
 
-from pydantic import AnyHttpUrl, BaseModel, Field, field_validator
+from pydantic import AnyHttpUrl, BaseModel, Field, ValidationError, field_validator
 
 
 class ProdutoMercadoSchema(BaseModel):
